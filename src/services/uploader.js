@@ -26,7 +26,7 @@ async function uploadImage(filePath) {
             Bucket: BUCKET_NAME,
             Key: `slides/${fileName}`,
             Body: fileContent,
-            ACL: 'public-read', // Deixa a imagem acessível publicamente
+            ACL: 'public-read',
             ContentType: 'image/png',
         };
 
